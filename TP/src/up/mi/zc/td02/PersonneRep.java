@@ -38,10 +38,12 @@ public class PersonneRep {
 		sb.append(" : ").append(this.numero);
 		return sb.toString();
 	}
-	/**
+	
 	public int compareTo(Personne p)
 	{
-		if
+		if(this.nom.equals(p.getNom()))
+			return (this.prenom.compareTo(p.getPrenom()));
+		return this.nom.compareTo(p.getNom());
 	}
-	*/
+	
 }
