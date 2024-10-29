@@ -53,11 +53,10 @@ public class Personne {
 	@Override
 	public String toString()
 	{
-		StringBuilder sb = new StringBuilder(this.nom);
+		StringBuilder sb = new StringBuilder();
+		sb.append(this.nom);
 		sb.append(" ");
 		sb.append(this.prenom);
-		sb.append("\n");
-		sb.append(this.nom);
 		sb.append("\n");
 		int i = 1;
 		for(String elem : numerosTelephone){
