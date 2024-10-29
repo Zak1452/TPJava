@@ -6,8 +6,9 @@ import up.mi.zc.td02.Vecteur;
 public abstract class Quadrilatere extends Figure {
 	private Point som1, som2, som3, som4;
 	
-	public Quadrilatere(Point a, Point b, Point c, Point d)
+	public Quadrilatere(Point a, Point b, Point c, Point d, String nom)
 	{
+		super(nom);
 		this.som1 = a;
 		this.som2 = b;
 		this.som3 = c;

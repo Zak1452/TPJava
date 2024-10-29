@@ -10,6 +10,7 @@ public class Disque extends Figure{
 	
 	public Disque(Point c, double r)
 	{
+		super("Disque");
 		this.centre = c;
 		this.rayon = r;
 	}
@@ -45,5 +46,7 @@ public class Disque extends Figure{
 	{
 		return (new Disque(this.centre.translation(v),this.rayon));
 	}
+	
+	
 	
 }

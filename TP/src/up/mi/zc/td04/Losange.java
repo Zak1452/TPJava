@@ -6,7 +6,8 @@ import up.mi.zc.td02.Vecteur;
 public class Losange extends Quadrilatere{
 
 	public Losange(Point a, Point b, Point c, Point d) {
-		super(a, b, c, d);
+		
+		super(a, b, c, d, "Losange");
 	}
 	
 	@Override
