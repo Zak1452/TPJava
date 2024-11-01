@@ -3,7 +3,7 @@ package up.mi.zc.td01;
  * @author Zak
  * 
  */
-import java.util.Scanner;
+//import java.util.Scanner;
 public class UtilMath {
 	//Exerice 2
 	/**

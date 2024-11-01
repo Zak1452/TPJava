@@ -2,18 +2,18 @@ package up.mi.zc.td04;
 
 public class Valeur extends Operateur{
 	
-	private double val;
+	private double valeur;
 	
 	public Valeur(double v)
 	{
 		super(0);
-		this.val = v;
+		this.valeur = v;
 	}
 	
-	@Override
 	public double evaluer()
 	{
-		return this.val;
+		return this.valeur;
 	}
-
+	
+	
 }
