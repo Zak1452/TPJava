@@ -59,5 +59,18 @@ public class Noeud {
 			else
 				this.getFilsGauche().ajouterNoeud(val);
 		}
+		if(val > this.valeurNoeud)
+		{
+			if(this.filsDroit == null)
+				this.setFilsDroit(new Noeud(val));
+			else
+				this.getFilsDroit().ajouterNoeud(val);
+		}
+	}
+	
+	@Override
+	public String toString()
+	{
+		return ""+this.valeurNoeud;
 	}
 }
