@@ -72,5 +72,8 @@ public class ParserRepertoire {
 		}
 		return new PersonneRep(nom, prenom, numero);
 	}
-	
+	public static void main(String []args)
+	{
+		System.out.println(parser("D:\\chaker_zakaria\\Universite_Licence\\Universite_Paris_Cite\\L3_info\\S5\\Repertoire.txt").toString());
+	}
 }
