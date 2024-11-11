@@ -1,5 +1,6 @@
 package up.mi.zc.revisioncc;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ClasseUtilitaire {
@@ -23,7 +24,19 @@ public class ClasseUtilitaire {
 			}
 			
 		}
-		
 		return indice;
+	}
+	
+	public static List<Integer> listePlusPetitsImpairs(List<List<Integer>> l)
+	{
+		if(l==null||l.isEmpty())
+			return null;
+		List<Integer> listeImpaire = new ArrayList<Integer>();
+		for(List<Integer>liste: l)
+		{
+			if(indicePlusPetitImpair(liste)!= -1)
+				listeImpaire.add(liste.get(indicePlusPetitImpair(liste)));
+		}
+		return listeImpaire;
 	}
 }
