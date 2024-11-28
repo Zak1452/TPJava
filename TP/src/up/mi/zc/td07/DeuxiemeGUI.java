@@ -2,6 +2,8 @@ package up.mi.zc.td07;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextInputControl;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
@@ -21,7 +23,11 @@ public class DeuxiemeGUI extends Application{
 	
 	public static BorderPane creerPane() throws Exception
 	{
-		return new BorderPane();
+		BorderPane bp = new BorderPane();
+		TextArea aire = new TextArea();
+		aire.setPrefRowCount(10);
+		bp.setCenter(aire);
+		return bp;
 	}
 
 }
