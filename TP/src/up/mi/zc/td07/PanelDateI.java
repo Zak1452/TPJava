@@ -38,10 +38,8 @@ public class PanelDateI extends Pane {
 		}
 		
 		public void handle(ActionEvent envent) {
-			long d = System.currentTimeMillis();
-			String date = d +"";
 			String dateCourante = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
-			label.setText(date);
+			label.setText(dateCourante);
 		}
 
 
