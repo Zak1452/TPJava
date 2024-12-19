@@ -34,6 +34,6 @@ public class SauvegardeRepertoire {
 	public static void main(String[]args)
 	{
 		RepertoireAmeliore rep = ParserRepertoire.parser("D:\\chaker_zakaria\\Universite_Licence\\Universite_Paris_Cite\\L3_info\\S5\\Repertoire.txt");
-		enregistrer(rep, "D:\\chaker_zakaria\\Universite_Licence\\Universite_Paris_Cite\\L3_info\\S5\\CopieRepertoire.txt");
+		enregistrer(rep, "D:\\chaker_zakaria\\Universite_Licence\\Universite_Paris_Cite\\L3_info\\S5\\Nouv.txt");
 	}
 }
