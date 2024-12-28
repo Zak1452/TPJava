@@ -15,7 +15,7 @@ public class TestUtilMath {
 		System.out.println("\n\nSaisir votre choix: ");
 	}
 	
-	public static void main(String [] args)
+	public static void methode()
 	{
 		Scanner saisie = new Scanner(System.in);
 		int choix = 0;
