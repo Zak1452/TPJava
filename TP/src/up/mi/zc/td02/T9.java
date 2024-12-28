@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class T9 {
 
-	public static byte getChiffreT9(char c)
+	public static byte getChiffreT9(char c) 
 	{
 		switch(Character.toLowerCase(c))
 		{
