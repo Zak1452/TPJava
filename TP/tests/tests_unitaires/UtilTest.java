@@ -6,8 +6,10 @@ import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import up.mi.zc.ClasseUtilitaire1;
@@ -15,6 +17,12 @@ import up.mi.zc.cm06.Util;
 
 public class UtilTest {
 
+	@BeforeEach
+	public  void affichage1()
+	{
+	    	System.out.println("Test de lancement");
+	}
+	 
 	@Test
 	public void testGetStringFromChar()
 	{
@@ -54,9 +62,31 @@ public class UtilTest {
     }
     
     @ParameterizedTest
-    @ValueSource(strings = {"descartes", "toto", "bonjour"})
-    public void testNotPalindrome(String word)
+    @ValueSource(strings = {"bob"})
+    public void test2(String word)
     {
-    	assertFalse(ClasseUtilitaire1.isPalindrome(word));
+    	assertTrue(ClasseUtilitaire1.isPalindrome(word));
     }
+    
+    @ParameterizedTest
+    @ValueSource(ints = {1, 3, 5, 7})
+    public void testParite(int entier)
+    {
+    	assertFalse((entier%2)==0);
+    }
+    
+    @ParameterizedTest
+    @ValueSource(floats = {2.5f})
+    public void test3(float val)
+    {
+    	assertTrue(val == (2+0.5));
+    }
+    
+    @ParameterizedTest
+    @CsvSource({"'toto, a', 1", "'Zak, a', 22", "'Leo, a', 24"})
+    public void testWithCsvSource(String first, int age)
+    {
+    	System.out.println(first + " "+age +" ans!");
+    }
+
 }
