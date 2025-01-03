@@ -7,10 +7,10 @@ public class Compteur {
 	public Compteur()
 	{	this.valeur=0;
 	}
-	public void incrementer(int i)
+	public synchronized void incrementer(int i)
 	{	valeur+= i;
 	}	
-	public void incrementer()
+	public synchronized void incrementer()
 	{	valeur++;
 	}
 	public int getValeur()
