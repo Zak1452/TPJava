@@ -25,5 +25,10 @@ public class Noeud<E>{
 	public void setSuivant(Noeud<E> noeud)
 	{	this.suivant = noeud;
 	}
+	
+	public String toString()
+	{
+		return ""+this.valeur;
+	}
 
 }

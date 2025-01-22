@@ -6,6 +6,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import up.mi.zc.td05.UtilMath;
@@ -98,5 +100,11 @@ public class TestUtilMath {
 		liste2.add(3);
 		
 		assertIterableEquals(liste1, liste2);
+	}
+	
+	@BeforeEach
+	public  void aff()
+	{
+			System.out.println("Lancement des tes UtilMath");
 	}
 }
